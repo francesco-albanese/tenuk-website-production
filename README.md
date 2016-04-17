@@ -5,7 +5,7 @@ The Empowerment Network UK - Empowering third parties &amp; communities against 
 ## Website Link
 
 <a href="http://www.tenuk.org.uk/">The Empowement Network UK</a>
-<img src="tenuk-logo.png" align="right"/>
+<img src="tenuk-logo.png" align="right" width="100"/>
 
 ## Project Description
 
