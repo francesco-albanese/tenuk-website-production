@@ -1,0 +1,104 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>[PageTitle]</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="Description" content="[PageDescription]" />
+    <meta name="Keywords" content="[PageKeywords]" />
+    <link rel="shortcut icon" href="/Content/Theme/favicon.ico" type="image/vnd.microsoft.icon" />
+    <link rel="icon" href="/Content/Theme/favicon.ico" type="image/vnd.microsoft.icon" />
+    <link rel="stylesheet" href="/Content/Theme/reset.css">
+    <link rel="stylesheet" href="/Content/Theme/main.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+  </head>
+
+  <body>
+    <div id="site-wrapper" class="show-nav">
+      <div class="close-nav">X</div>
+      <div id="site-canvas">
+        <div class="cookie-acceptance wrapper">
+          <div class="row">
+            <div class="col col-940-12">
+              <p>
+                By using this site you agree to our <a href="/how-we-use-cookies">cookie policy</a>
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col col-940-12">
+              <a onclick="cookiesAccepted(); return false;" class="btn accept-cookie" href="#">Accept &amp; close</a>
+            </div>
+          </div>
+        </div>
+        <header class="header">
+          <div class="topNav hidden-768 hidden-480 hidden-320">
+              <div class="wrapper">
+                <a href="https://tenuk.admin.neetrix.com/" target="_blank">Staff Login</a>
+                <a href="http://community.tenuk.org.uk/login" target="_blank">Online Community</a>
+              </div>
+          </div>
+          <div class="wrapper">
+            <div class="row">
+              <div class="col col-940-4 col-480-4 col-320-4">
+                    <div class="logo">[SiteLogo]</div>
+              </div>
+              <div class="col col-940-8 col-480-8 col-320-8">
+                  <div>[ContentArea]</div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col col-940-12">
+                 <nav class="navbarDesktop hidden-768 hidden-480 hidden-320">[Navigation]</nav>
+                   <a class="toggle-nav" href="#">
+                     <span class="icon-bar"></span>
+                     <span class="icon-bar"></span>
+                     <span class="icon-bar"></span>
+                     <span class="menu">Menu</span>
+                   </a>
+              </div>
+            </div>
+          </div>
+        </header>
+
+
+
+        <section>
+          <div class="">[PageHeader]</div>
+        </section>
+        <div id="" class="">
+          <section id="" class="">
+            <div>[ContentAreaHeader]</div>
+            <div>[ContentAreaFooter]</div>
+          </section>
+        </div>
+        <footer>
+          <div class="">
+            <section id="">[PageFooter]</section>
+            <section id="">[SiteFooter]</section>
+          </div>
+        </footer>
+        <div class="canvasOverlay"></div>
+        <a class="backToTop" href="#"></a>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script class="myJs" src="/Content/js.cookie.js" type="text/javascript"></script>
+    <script class="myJs" src="/Content/Theme/functions.js" type="text/javascript"></script>
+    <script>
+      $(function(){
+        var cookieVal = Cookies.set("cookieAcceptance");
+        if(cookieVal !== "Accepted"){
+          $('.cookie-acceptance').show();
+        }
+      });
+      function cookiesAccepted(){
+        Cookies.set("cookieAcceptance", "Accepted", { expires : 365 });
+        $('.cookie-acceptance').slideUp('slow');
+      }
+    </script>
+  </body>
+</html>
